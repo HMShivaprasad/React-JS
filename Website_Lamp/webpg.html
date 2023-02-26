@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="webpg.css">
+</head>
+<body>
+    
+    <div class="pg">
+            <nav>
+                <img src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-5.png" alt="" class="menu">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/HMS_logo.png" alt="" class="logo">
+                <ul>
+                    <li><a href="">Latest</a></li>
+                    <li><a href="">Modern</a></li>
+                    <li><a href="">Contemporary</a></li>
+                    <li><a href="">Contact-us</a></li>
+                </ul>
+                <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            </nav>
+
+            <div class="lamp_container">
+                <img src="images\lamp.png" alt="" class="lamp">
+                <img src="images\light.png" alt="" class="light" id="light">
+            </div>
+            
+            <div class="txt_container">
+                <h1>A new lamp with a bold glow</h1>
+                <p>With its distinctive style, and interchangeable glass shades, this new space-transforming lamp <br>
+                    is guaranteed to be a talking point, on or off. Our tip? Connect it with our remote control  <br>
+                    kit so you can dim and switch lights, and get even more ways to set a stylish mood.</p>
+                    <h3>- Shivaprasad H M</h3>
+                    <a href="https://www.ikea.com/in/en/search/?q=lamp">Check ALL THE COLLECTIONS</a>
+                     <div class="control">
+                     <p>04</p>
+                        <div class="line"><span></span></div>
+                        <p>05</p>
+                    </div>
+                </div>
+   </div>
+
+   
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle(".act")
+        light.classList.toggle("on")
+
+    }
+</script>
+
+</body>
+</html>
